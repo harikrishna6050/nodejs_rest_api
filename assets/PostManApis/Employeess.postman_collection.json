@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "6e4a4079-5505-4e7d-832a-f4ddd8e6e4fe",
+		"name": "Employeess",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12178783"
+	},
+	"item": [
+		{
+			"name": "GetEmployeess",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3900/employeess"
+			},
+			"response": []
+		},
+		{
+			"name": "GetParticularEmployeeData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3900/employee/1"
+			},
+			"response": []
+		},
+		{
+			"name": "AddNewEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ankarao\",\r\n    \"age\": 29,\r\n    \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3900/newEmployee"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idEmployee\": 2,\r\n    \"name\": \"Praveen Kumar\",\r\n    \"age\": 30,\r\n    \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3900/updateEmployee"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idEmployee\": 2,\r\n    \"name\": \"Praveen Kumar\",\r\n    \"age\": 30,\r\n    \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3900/deleteEmployee/3"
+			},
+			"response": []
+		}
+	]
+}
